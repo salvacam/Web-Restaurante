@@ -1,0 +1,530 @@
+body {
+    margin: 0 auto;
+    background-color: #c95511;
+}
+
+#contenedor {
+    margin: 0 auto;
+}
+/* Cabecera */
+
+header nav {
+    background-color: #c95511;
+    min-height: 370px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+header a {
+    width: 155px;
+    height: 155px;
+    line-height: 155px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-image: url();
+    font-family: 'ftf_indonesiana_serif';
+    font-size: 29px;
+    letter-spacing: 1.5px;
+    margin-bottom: 35px;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1ms;
+    color: white;
+    background-image: url("../img/enlace.png");
+    background-repeat: no-repeat;
+}
+
+header a.activo {
+    background-position: 0 -155px;
+    color: black;
+}
+
+header a:hover {
+    -webkit-animation: moveFromTop 0.5s;
+    animation: moveFromTop 0.5s;
+    background-position: 0 -155px;
+    color: black;
+}
+
+header #cajaLogo {
+    display: flex;
+    align-self: flex-start;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 340px;
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+@-webkit-keyframes moveFromTop {
+    from {
+        color: white;
+        background-position: 0 0;
+    }
+    to {
+        color: black;
+        background-position: 0 -155px;
+    }
+}
+
+@keyframes moveFromTop {
+    from {
+        color: white;
+        background-position: 0 0;
+    }
+    to {
+        color: black;
+        background-position: 0 -155px;
+    }
+}
+/* Cuerpo */
+
+#texto1 {
+    background-color: #b8822a;
+    padding: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'josefin_sansregular';
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 530px;
+}
+
+#flechaAbajo {
+    position: fixed;
+    bottom: 10px;
+    left: 49%;
+    z-index: 30;
+    -webkit-transform: translateZ(0);
+    -webkit-animation: moveArrow 1s infinite alternate-reverse linear;
+    animation: moveArrow 1s infinite alternate-reverse linear;
+}
+@-webkit-keyframes moveArrow {
+    from {
+        bottom: 20px;
+    }
+    to {        
+        bottom: 10px;
+    }
+}
+
+@keyframes moveArrow {
+    from {
+        bottom: 20px;
+    }
+    to {        
+        bottom: 10px;
+    }
+}
+
+/* Mapa */
+
+#contenedorMapa {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 530px;
+    padding-right: 25px;
+    min-width: 290px;
+}
+
+#contenedorMapa .saltoMapa {
+    display: block;
+}
+
+#contenedorMapa span.tituloMapa {
+    display: block;
+    clear: both;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+#contenedorMapa span.textoMapa {
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+#contenedorMapa #cajaMapa {
+    display: block;
+    width: 100%;
+    height: 260px;
+}
+
+#contenedorMapa #rutas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contenedorMapa #rutas #tituloRutas {
+    text-align: center;
+    width: 100%;
+}
+
+#andando {    
+    height: 70px;
+    width: 70px;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    background: transparent url("../img/botonEnviar.png") no-repeat;
+    background-position: 0 -140px;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+#coche {
+    height: 70px;
+    width: 70px;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    background: transparent url("../img/botonEnviar.png") no-repeat;
+    background-position: 0 -280px;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+#andando:hover {
+    background-position: 0 -210px;
+}
+
+#coche:hover {    
+    background-position: 0 -350px;
+}
+
+/* Formulario */
+
+#formulario {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 530px;
+    color: white;
+    padding-right: 25px;
+}
+
+#formulario #nombreFormulario {
+    display: block;
+    clear: both;
+    font-size: 24px;
+    width: 100%;
+    align-self: flex-start;
+}
+
+#formulario #textoFormulario {
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    padding-left: 20px;
+    align-self: flex-start;
+    margin-top: -20px;
+}
+
+#formulario #buttons {
+    margin: 0 auto;
+}
+
+#formulario form {
+    margin: 0 auto;
+    padding: 0;
+    align-self: flex-start;
+    margin-top: -35px;
+}
+
+#formulario form * {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#formulario form #name,
+#formulario form #phone,
+#formulario form #email,
+#formulario form textarea {
+    width: 300px;
+    height: 32px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    font-size: 18px;
+    padding-left: 50px;
+    color: #777;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+#formulario form *:focus {
+    color: #333;
+    border-color: rgba(41, 92, 161, 0.4);
+    outline: 0 none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(40, 90, 160, 0.6);
+}
+
+#formulario form #name {
+    background: #fff url('../img/contacto.png') no-repeat;
+    background-position: 0 -184px;
+}
+
+#formulario form #phone {
+    background: #fff url('../img/contacto.png') no-repeat;
+    background-position: 0 -152px;
+}
+
+#formulario form #email {
+    background: #fff url('../img/contacto.png') no-repeat;
+    background-position: 0 -216px;
+}
+
+#formulario form textarea {
+    resize: none;
+    height: 100px;
+    padding-top: 10px;
+    background: #fff url('../img/contacto.png') no-repeat;
+    background-position: 0 -248px;
+}
+
+#formulario form #enviar {
+    clear: none;
+    float: right;
+    height: 70px;
+    width: 70px;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    background: transparent url("../img/botonEnviar.png") no-repeat;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+#formulario form #enviar:hover,
+#formulario form #enviar:active {
+    background-position: 0 -70px;
+}
+
+#formulario form #borrar:hover,
+#formulario form #borrar:active {
+    background-color: #bc7777;
+    color: black;
+    border-color: black;
+}
+/* Pie */
+
+footer {
+    margin: 0 auto;
+    background-color: #c95511;
+}
+
+footer #cajaLogoF {
+    margin: 0 auto;
+    width: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer #cajaLogoF img {
+    width: 200px;
+}
+
+footer #textoPie {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'montserratregular';
+    font-size: 20px;
+    color: white;
+}
+
+footer #textoPie p {
+    margin-top: -15px;
+}
+
+footer #social {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    max-width: 500px;
+    min-width: 320px;
+    font-family: 'social_icons_pro_set_1_-_roRg';
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+
+footer #social a {
+    color: white;
+    text-decoration: none;
+}
+
+footer #social a:hover {
+    color: grey;
+}
+
+footer #copy {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer small {
+    margin: 0 auto;
+    color: white;
+    font-family: 'montserratregular';
+}
+/* Media Query */
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1100px) {}
+
+@media (max-width: 1024px) {
+    header nav {
+        min-height: 250px;
+    }
+    header #cajaLogo {
+        width: 350px;
+        height: 193px;
+        margin-left: 20px;
+        order: 1;
+        background-image: url("../img/logo_.png");
+    }
+    header #cajaLogo img {
+        width: 200px;
+    }
+    header a {
+        order: 2;
+        width: 120px;
+        height: 120px;
+        font-size: 22px;
+        letter-spacing: 1.5px;
+        line-height: 120px;
+        background-size: cover;
+    }
+    header a.activo {
+        background-position: 0 -120px;
+    }
+    header a:hover {
+        background-position: 0 -120px;
+    }
+    #flechaAbajo,
+    #menuOculto {
+        display: none;
+    }
+    @keyframes moveFromTop {
+        from {
+            color: white;
+            background-position: 0 0;
+        }
+        to {
+            color: black;
+            background-position: 0 -120px;
+        }
+    }
+    #texto1 {
+        flex-wrap: wrap;
+		justify-content: center;
+    }
+    #formulario {
+        padding-right: 0;
+        max-width: 100%;
+        margin-top: 25px;
+        min-height: 450px;
+    }
+    #formulario form{
+        margin: 0 auto;
+    }
+    #contenedorMapa {
+        padding-right: 0;
+        max-width: 100%;
+    }
+    #cajaMapa {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    header nav {
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    header #cajaLogo {
+        width: 100%;
+        background-position: center;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    #contenedorMapa #rutas{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    header nav{
+        height: 480px;
+    }
+    header a {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+    #texto1 {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    header #cajaLogo {
+        background-size: 90% auto;
+        width: 100%;
+        min-width: 320px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #formulario form #name,
+    #formulario form #phone,
+    #formulario form #email,
+    #formulario form textarea {
+        width: 250px;
+    }
+}
+
+@media (max-width: 355px) {
+    header a {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    header nav {
+        min-width: 320px;
+    }
+    #formulario form #name,
+    #formulario form #phone,
+    #formulario form #email,
+    #formulario form textarea {
+        width: 220px;
+    }
+}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Yantra Restaurante Indio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/contacto.css" />
+
+    <link rel="shortcut icon" href="../img/india-icon.png">
+    <script src="../js/contacto.js"></script>
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="../js/gmaps.js"></script>
+
+</head>
+
+<body>
+    <div id="contenedor">
+        <img src="../img/down.png" alt=" " id="flechaAbajo" />
+        <header>
+            <nav>
+                <a href="../index.html">inicio</a>
+
+                <a href="./menu.html">menu</a>
+
+                <div id="cajaLogo">
+                </div>
+
+                <a href="#" class="activo">contacto</a>
+
+                <a href="#">reserva</a>
+            </nav>
+        </header>
+
+        <section class="texto" id="texto1">
+            <div id="contenedorMapa">
+                <div class="saltoMapa">
+                    <span class="tituloMapa"><b>Localización</b></span>
+                    <span class="textoMapa">Calle Camino de Ronda, nº 58</span>
+                    <span class="textoMapa">Granada</span>
+                    <span class="textoMapa">Teléfono 958 566 327</span>
+                </div>
+                <div class="saltoMapa">
+                    <span class="tituloMapa"><b>Horario de cocina:</b></span>
+                    <span class="textoMapa">De Martes a Sabado De 13:30 a 16:00 h. y de 20:30 a 24:00 h.</span>
+                    <span class="textoMapa">Domingo de 13:30 a 16:00</span>
+                    <span class="textoMapa">Lunes cerrado por descando</span>
+                </div>
+
+                <div id="cajaMapa">
+
+                </div>
+                <div id="rutas">
+                    <span class="tituloMapa" id="tituloRutas"><b>Muestrame como llegar</b></span>
+                    <input type="button" id="andando" value="">
+                    <input type="button" id="coche" value="">
+                </div>
+            </div>
+
+            <div id="formulario">
+                <span id="nombreFormulario"><b>Contacto</b></span>
+                <span id="textoFormulario">Para cualquier consulta rellene el formulario o llámenos</span>
+                <form name="contacto" id="form-contacto" method="post" action="#">
+                        <input id="name" type="text" name="name" id="name" placeholder="Nombre" autocomplete="on" tabindex="1" class="txtinput" required>
+                        <input id="phone" type="phone" name="phone" id="phone" placeholder="Teléfono" autocomplete="on" tabindex="2" class="txtinput" required>
+                        <input id="email" type="email" name="email" id="email" placeholder="E-mail" autocomplete="on" tabindex="3" class="txtinput" required>
+                        <textarea name="message" id="message" placeholder="Introduce tu mensaje..." tabindex="4" class="txtblock" required></textarea>
+                        <input id="enviar" type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="6" value="">
+                </form>
+            </div>
+
+        </section>
+
+        <footer>
+            <div id="cajaLogoF">
+                <img src="../img/logo.png" alt="logo">
+            </div>
+
+            <div id="textoPie">
+                <p>Teléfono 958 566 327</p>
+                <p>Camino de Ronda Nº 58</p>
+                <p>-· Granada ·-</p>
+            </div>
+
+            <div id="social">
+                <a href="#">U</a>
+                <a href="#">f</a>
+                <a href="#">l</a>
+                <a href="#">C</a>
+                <a href="#">P</a>
+            </div>
+            <div id="copy">
+                <small>Copyright &copy; 2015 Yantra Restaurante Indio S.A.</small>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

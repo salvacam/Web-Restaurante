@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Yantra Restaurante Indio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./css/rest.css" />
+
+    <link rel="shortcut icon" href="./img/india-icon.png">
+    <script src="./js/main.js"></script>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script>
+        $(function () {
+            if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+                $('#ios-notice').removeClass('hidden');
+                $('.parallax-window').height($(window).height() * 0.5 | 0);
+            } else {
+                $(window).resize(function () {
+                    var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+                    $('.parallax-window').height(parallaxHeight);
+                }).trigger('resize');
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div id="contenedor">
+        <nav id="menuOculto" hidden>
+            <img src="./img/logoO.png" alt="logo">
+
+            <div id="enlacesOcultos">
+                <a href="#" class="activoO">inicio</a>
+
+                <a href="./html/menu.html">menu</a>
+
+                <a href="./html/contacto.html">contacto</a>
+
+                <a href="#">reserva</a>
+            </div>
+        </nav>
+        <img src="./img/down.png" alt=" " id="flechaAbajo" />
+        <header>
+            <nav>
+                <a href="#" class="activo">inicio</a>
+
+                <a href="./html/menu.html"><span>menu</span></a>
+
+                <div id="cajaLogo">
+                </div>
+
+                <a href="./html/contacto.html">contacto</a>
+
+                <a href="#">reserva</a>
+            </nav>
+        </header>
+
+        <div id="parallax1" class="parallax-window" data-position="top" data-bleed="20" data-parallax="scroll" data-image-src="img/fondo1.jpg"></div>
+
+        <section id="secSaludo">
+            <div id="logoSaludo">
+                <img id="imagenSaludo" alt="namaste" src="./img/saludo_.png">
+                <span id="tituloSaludo">namaste</span>
+            </div>
+            <div id="textoSaludo" class="textoSeccion">
+                <p>Si le gusta probar sabores nuevos, ven a visitarnos a Yantra, restaurante indio en Granada. Descubra la gran variedad de la gastronomía india y su cultura fruto de la mezcla de diferentes pueblos y tradiciones que le otorgan una particular visión de los sabores, los olores, la música y la vida. Nuestra cocina se caracteriza por la mezcla de especias como cilantro, curry, comino o la cúrcuma, con una amplia variedad de legumbres y verduras, consiguiendo destacar en la carne aromas de albahaca y gengibre. Disfrute de una experiencia única para todos los sentidos, ¡venga a visitarnos!</p>
+            </div>
+        </section>
+
+        <div class="parallax-window" data-bleed="20" data-parallax="scroll" data-image-src="img/fondo2.jpg"></div>
+
+        <section id="secComida">
+            <div id="imagenComida" class="imagenSeccion">
+                <img src="img/cocina1.jpg" alt="comida" id="imagenComida1" class="imagenComida">
+                <img src="img/cocina2.jpg" alt="comida" id="imagenComida2" class="imagenComida">
+                <img src="img/cocina3.jpg" alt="comida" id="imagenComida3" class="imagenComida">
+                <img src="img/cocina4.jpg" alt="comida" id="imagenComida4" class="imagenComida">
+            </div>
+            <div id="textoComida" class="textoSeccion">
+                <p>La gastronomía India es muy variada, surge como resultado de la diversidad de culturas que la han enriquecido a lo largo de las colonizaciones acaecidas durante varios siglos. Así se fueron incorporando diferentes prácticas culinarias traídas por los colonos que con el tiempo se fueron mezclando hasta llegar a ser el conjunto de tendencias que se conocen en la actualidad. La mayoría de los sabores de la India están íntimamente relacionados por el uso significativo de especias, y una gran variedad de verduras. Comenzando por el arroz, siguiendo por sus conocidas Samosas, pollo y cordero asados en el milenario horno Tandoorí. Platos vegetarianos de todos los gustos y sabores amenizados con aperitivos populares y muy creativos realizados a base de vegetales. Y por supuesto..., el Curry. Increible mezcla de especias que acompañará a todos nuestros platos. Toda una infinidad de platos que a partir de ahora, deleitarán cada uno de nuestros paladares. Adelante....</p>
+            </div>
+        </section>
+
+        <div class="parallax-window" data-bleed="20" data-parallax="scroll" data-image-src="img/fondo3.jpg"></div>
+
+        <section id="secLocal">
+            <div id="imagenLocal" class="imagenSeccion">
+                <img src="img/local1.jpg" alt="local" id="imagenLocal1" class="imagenLocal">
+                <img src="img/local2.jpg" alt="local" id="imagenLocal2" class="imagenLocal">
+                <img src="img/local3.jpg" alt="local" id="imagenLocal3" class="imagenLocal">
+                <img src="img/local4.jpg" alt="local" id="imagenLocal4" class="imagenLocal">
+            </div>
+            <div id="textoLocal" class="textoSeccion">
+                <p>Yantra es un elegante restaurante de moda y elegante, que ofrece cocina india con recetas inventivas y sabores seductores para estimular el paladar y gratificar los sentidos. Este exquisito restaurante es ideal para eventos íntimos y grandes funciones corporativas con elegantes asientos al aire libre y comedores privados. Si usted es anfitrión de una fiesta y lo que buscas en una cena privada, nos comprometemos a entregar una experiencia inolvidable para usted y sus invitados, Restaurante privado está disponible para un mínimo de 40 personas o más.</p>
+            </div>
+        </section>
+
+
+        <div class="parallax-window" data-bleed="20" data-parallax="scroll" data-image-src="img/fondo4.jpg"></div>
+
+        <section id="secCheff">
+            <img src="img/logoCheff.png" alt="logoCheff" id="imagenCheff">
+            <div id="textoCheff" class="textoSeccion">
+                <p>Nuestro Chef <b><i>Sanjeev Kapoor</i></b> es un profundo convencido de la importancia de usar solo los productos más frescos y selectos para elaborar sus platos. Sus primeros pasos en la cocina fueron de la mano de su madre y a una edad muy temprana; sin duda, estas experiencias desencadenaron un profundo interés por la gastronomía lo que llegó a convertirse en la pasión de su vida. Tras perfeccionar sus técnicas culinarias en las cocinas de varios hoteles y restaurantes, el Chef <b><i>Sanjeev Kapoor</i></b> fue nombrado Chef Jefe del restaurante Yantra en 2007. Si tuviéramos que definir su filosofía y forma de entender la cocina, podríamos decir que el Chef <b><i>Sanjeev Kapoor</i></b> da un toque contemporáneo a los platos tradicionales y familiares de la gastronomía india.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div id="cajaLogoF">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+
+            <div id="textoPie">
+                <p>Teléfono 958 566 327</p>
+                <p>Camino de Ronda Nº 58</p>
+                <p>-· Granada ·-</p>
+            </div>
+
+            <div id="social">
+                <a href="#">U</a>
+                <a href="#">f</a>
+                <a href="#">l</a>
+                <a href="#">C</a>
+                <a href="#">P</a>
+            </div>
+            <div id="copy">
+                <small>Copyright &copy; 2015 Yantra Restaurante Indio S.A.</small>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

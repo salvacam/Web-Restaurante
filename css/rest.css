@@ -1,0 +1,532 @@
+body {
+    margin: 0 auto;
+    background-color: #c95511;
+}
+
+#contenedor {
+    margin: 0 auto;
+}
+/* Cabecera */
+
+header nav {
+    background-color: #c95511;
+    min-height: 370px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+header a {
+    width: 155px;
+    height: 155px;
+    line-height: 155px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-image: url();
+    font-family: 'ftf_indonesiana_serif';
+    font-size: 29px;
+    letter-spacing: 1.5px;
+    margin-bottom: 35px;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1ms;
+    color: white;
+    background-image: url("../img/enlace.png");
+    background-repeat: no-repeat;
+}
+
+header a.activo {
+    background-position: 0 -155px;
+    color: black;
+}
+
+header a:hover {
+    -webkit-animation: moveFromTop 0.5s;
+    animation: moveFromTop 0.5s;
+    background-position: 0 -155px;
+    color: black;
+}
+
+header #cajaLogo {
+    display: flex;
+    align-self: flex-start;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 340px;
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+@-webkit-keyframes moveFromTop {
+    from {
+        color: white;
+        background-position: 0 0;
+    }
+    to {
+        color: black;
+        background-position: 0 -155px;
+    }
+}
+
+@keyframes moveFromTop {
+    from {
+        color: white;
+        background-position: 0 0;
+    }
+    to {
+        color: black;
+        background-position: 0 -155px;
+    }
+}
+
+#menuOculto {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 20;
+    background-color: #c95511;
+    -webkit-transform: translateZ(0);
+}
+
+#menuOculto img {
+    display: block;
+    margin-left: 20px;
+}
+
+#enlacesOcultos {
+    display: inline-block;
+    margin-top: -45px;
+    width: 320px;
+    float: right;
+}
+
+#menuOculto a {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    text-decoration: none;
+    font-family: 'ftf_indonesiana_serif';
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1ms;
+    color: white;
+}
+
+#menuOculto a.activoO {
+    color: black;
+}
+
+#menuOculto a:hover {
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1ms;
+    color: black;
+}
+/* Cuerpo */
+
+.textoSeccion {
+    font-family: 'josefin_sansregular';
+    font-size: 18px;
+    text-align: justify;
+}
+
+#flechaAbajo {
+    position: fixed;
+    bottom: 10px;
+    left: 49%;
+    z-index: 30;
+    -webkit-transform: translateZ(0);
+    -webkit-animation: moveArrow 1s infinite alternate-reverse linear;
+    animation: moveArrow 1s infinite alternate-reverse linear;
+}
+@-webkit-keyframes moveArrow {
+    from {
+        bottom: 20px;
+    }
+    to {        
+        bottom: 10px;
+    }
+}
+
+@keyframes moveArrow {
+    from {
+        bottom: 20px;
+    }
+    to {        
+        bottom: 10px;
+    }
+}
+
+/* Seccion 1 Restaurante*/
+
+#secSaludo {
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #41373f;
+    color: white;
+    min-width: 220px;
+}
+
+#secSaludo #logoSaludo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#secSaludo #tituloSaludo {
+    display: block;
+    font-family: 'ftf_indonesiana_serif';
+    font-size: 40px;
+    letter-spacing: 1.5px;
+}
+
+#secSaludo #textoSaludo {
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 250px;
+}
+/* Seccion 2 Comida*/
+
+#secComida {
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    background-color: #b8822a;
+    font-size: 16px;
+    color: white;
+    min-width: 220px;
+}
+
+#secComida #imagenComida {
+    display: flex;
+    margin: 0 auto;
+    min-width: 290px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#secComida .imagenComida {
+    display: block;
+    margin-right: 10px;
+    width: 325px;
+    max-width: 100%;    
+    height: auto;
+}
+
+#secComida #textoComida {
+    margin: 0 auto;
+    min-width: 280px;
+}
+
+#secComida #textoComida p {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+}
+/* Seccion 3 Local*/
+
+#secLocal {
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    background-color: #a73c0f;
+    color: white;
+    min-width: 220px;
+}
+
+#secLocal #imagenLocal {
+    display: flex;
+    min-width: 290px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#secLocal .imagenLocal {
+    display: block;
+    margin-right: 10px;
+    width: 325px;
+    max-width: 100%;
+    height: auto;
+}
+
+#secLocal #textoLocal {
+    margin: 0 auto;
+    min-width: 280px;
+}
+
+#secLocal #textoLocal p {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+}
+/* Seccion 4 Cheff*/
+
+#secCheff {
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    background-color: #41373f;
+    color: white;
+}
+
+#secCheff #textoCheff {
+    margin: 0 auto;
+}
+
+#secCheff #textoCheff p {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+}
+/* Parallax */
+
+.parallax-window {
+    height: 680px !important;
+    background: transparent;
+}
+
+#parallax1 {
+    height: 630px !important;
+}
+/* Pie */
+
+footer {
+    margin: 0 auto;
+    background-color: #c95511;
+}
+
+footer #cajaLogoF {
+    margin: 0 auto;
+    width: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer #cajaLogoF img {
+    width: 200px;
+}
+
+footer #textoPie {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'montserratregular';
+    font-size: 20px;
+    color: white;
+}
+
+footer #textoPie p {
+    margin-top: -15px;
+}
+
+footer #social {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    max-width: 500px;
+    min-width: 320px;
+    font-family: 'social_icons_pro_set_1_-_roRg';
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+
+footer #social a {
+    color: white;
+    text-decoration: none;
+}
+
+footer #social a:hover {
+    color: grey;
+}
+
+footer #copy {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer small {
+    margin: 0 auto;
+    color: white;
+    font-family: 'montserratregular';
+}
+/* Media Query */
+
+@media (max-width: 1450px) {
+    #secComida #imagenComida4,
+    #secLocal #imagenLocal4 {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    #secCheff #textoCheff p,
+    #secComida #textoComida p,
+    #secLocal #textoLocal p {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 1100px) {
+    #secComida #imagenComida3,
+    #secLocal #imagenLocal3 {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    header nav {
+        min-height: 250px;
+    }
+    header #cajaLogo {
+        width: 350px;
+        height: 193px;
+        margin-left: 20px;
+        order: 1;
+        background-image: url("../img/logo_.png");
+    }
+    header #cajaLogo img {
+        width: 200px;
+    }
+    header a {
+        order: 2;
+        width: 120px;
+        height: 120px;
+        font-size: 22px;
+        letter-spacing: 1.5px;
+        line-height: 120px;
+        background-size: cover;
+    }
+    header a.activo {
+        background-position: 0 -120px;
+    }
+    header a:hover {
+        background-position: 0 -120px;
+    }
+    #flechaAbajo,
+    #menuOculto {
+        display: none;
+    }
+    @-webkit-keyframes moveFromTop {
+        from {
+            color: white;
+            background-position: 0 0;
+        }
+        to {
+            color: black;
+            background-position: 0 -120px;
+        }
+    }
+    @keyframes moveFromTop {
+        from {
+            color: white;
+            background-position: 0 0;
+        }
+        to {
+            color: black;
+            background-position: 0 -120px;
+        }
+    }
+        .parallax-window {
+        height: 528px !important;
+    }
+    #parallax1 {
+        height: 528px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    header nav {
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    header #cajaLogo {
+        width: 100%;
+        background-position: center;
+    }
+}
+
+@media (max-width: 800px) {
+    #secCheff #textoCheff p,
+    #secComida #textoComida p,
+    #secLocal #textoLocal p {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    #secComida #imagenComida2,
+    #secLocal #imagenLocal2 {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    header nav{
+        height: 480px;
+    }
+    header a {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+    #secSaludo,
+    #secComida,
+    #secLocal,
+    #secCheff {
+        padding: 25px;
+    }
+    #secComida .imagenComida,
+    #secLocal .imagenLocal {    
+        min-width: 250px;
+    }
+    .parallax-window {
+        height: 350px !important;
+    }
+    #parallax1 {
+        height: 350px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    header #cajaLogo {
+        background-size: 90% auto;
+        width: 100%;
+        min-width: 320px;
+        margin: 0 auto;
+        padding: 0;
+    }    
+    #secComida .imagenComida ,
+    #secLocal .imagenLocal {    
+        width: 250px;
+        height: 200px;
+    }    
+}
+
+@media (max-width: 355px) {
+    header a {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    header nav {
+        min-width: 320px;
+    }
+}
